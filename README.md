@@ -17,17 +17,19 @@ SOARPhish is a Python-based tool designed to automate the triage of phishing ema
 
 ## Installation
 
-1. Clone the repository:
+   Clone the repository:
    ```bash
    git clone https://github.com/ties2/SOARPhish.git
    cd SOARPhish
 
-Run the script:
-    ```bash
-       python src/main.py sample_email.eml your_threat_intel_api_key https://soar-platform.com your_soar_api_key
 
 
-Example Input
+   Run the script:
+   ```bash
+   python src/main.py sample_email.eml your_threat_intel_api_key https://soar-platform.com your_soar_api_key
+
+
+   Example Input
 
 Email file: sample_email.eml
 Threat Intelligence API Key: your_threat_intel_api_key
