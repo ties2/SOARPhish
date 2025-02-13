@@ -23,8 +23,8 @@ SOARPhish is a Python-based tool designed to automate the triage of phishing ema
    cd SOARPhish
 
 Run the script:
-   ```bash
-   python src/main.py sample_email.eml your_threat_intel_api_key https://soar-platform.com your_soar_api_key
+    ```bash
+       python src/main.py sample_email.eml your_threat_intel_api_key https://soar-platform.com your_soar_api_key
 
 
 Example Input
@@ -109,4 +109,5 @@ Threat Intelligence Lookup Results:
 The program queries the threat intelligence platform for each link found in the email and displays the reputation and confidence score.
 SOAR Incident Creation:
 The program creates an incident in the SOAR platform and displays the response, including the incident ID, title, description, threat intelligence results, and status.
+
 
