@@ -2,7 +2,7 @@
 
 ![Python](https://img.shields.io/badge/python-3.8%2B-blue)
 
-SOARPhish is a Python-based tool designed to automate the triage of phishing emails by integrating with a SOAR (Security Orchestration, Automation, and Response) platform. This project reduces manual analysis time by 30% by automating repetitive tasks such as email parsing, threat intelligence lookup, and incident creation.
+SOARPhish is a Python-based tool designed to automate the triage of phishing emails by integrating with a SOAR (Security Orchestration, Automation, and Response) platform. This project reduces manual analysis time by automating repetitive tasks such as email parsing, threat intelligence lookup, and incident creation.
 
 ---
 
@@ -19,17 +19,18 @@ SOARPhish is a Python-based tool designed to automate the triage of phishing ema
 
    Clone the repository:
    ```bash
-   git clone https://github.com/ties2/SOARPhish.git
-   cd SOARPhish
+    git clone https://github.com/ties2/SOARPhish.git
+    cd SOARPhish
+```
 
 
 
    Run the script:
    ```bash
    python src/main.py sample_email.eml your_threat_intel_api_key https://soar-platform.com your_soar_api_key
+```
 
-
-   Example Input
+Example Input
 
 Email file: sample_email.eml
 Threat Intelligence API Key: your_threat_intel_api_key
@@ -41,8 +42,6 @@ Example Output
 
 The program will first parse the email and display the extracted details:
 
-plaintext
-Copy
 Parsed Email Details:
 - Subject: "Urgent: Verify Your Account"
 - From: "phisher@example.com"
@@ -55,16 +54,13 @@ Parsed Email Details:
 
 The program will query the threat intelligence platform for each extracted link and display the results:
 
-plaintext
-Copy
 Threat Intelligence Lookup Results:
 - https://phishing-site.com: {"reputation": "malicious", "confidence": 95}
 3. SOAR Incident Creation
 
 The program will create an incident in the SOAR platform and display the response:
 
-plaintext
-Copy
+```bash
 Incident created: {
   "id": "12345",
   "title": "Phishing Email: Urgent: Verify Your Account",
@@ -74,14 +70,15 @@ Incident created: {
   },
   "status": "New"
 }
+```
 Full Example Output
+
 
 Here’s what the full output might look like when running the program:
 
-plaintext
-Copy
+```bash
 $ python src/main.py sample_email.eml your_threat_intel_api_key https://soar-platform.com your_soar_api_key
-
+```
 Parsed Email Details:
 - Subject: "Urgent: Verify Your Account"
 - From: "phisher@example.com"
