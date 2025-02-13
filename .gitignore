@@ -1,20 +1,22 @@
-/.cursor
-~
-~/.cursor
-~/.cursor/
-.cursor
-.cursor/
-./vscode
-/.vscode
-~/.vscode
-~/.vscode/
-.vscode
-/Users/nirvana
-/vscode/
-/.vscode/
-/.node_modules
-/node_modules
-node_modules/
-~/node_modules
-Users/
-.vscode/extensions
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.db
+*.sqlite3
+
+# Environment variables
+.env
+
+# IDE
+.vscode/
+.idea/
+
+# Logs and databases
+*.log
+*.sql
+*.sqlite
+
+# Local development
+local/
